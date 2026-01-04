@@ -14,17 +14,17 @@ A lightweight Python proxy designed to bypass Deep Packet Inspection (DPI) and c
 
 1. **Run the Script**:
    ```bash
-   python pyprox_complete.py
+   python pyprox.py
    ```
    *The proxy listens on `127.0.0.1:4500`.*
 
 2. **Connect a Client**:
-   - **Option A**: Import `config_complete.json` into a V2Ray-compatible client (V2RayN, NekoBox, etc.). This sets up a local SOCKS5 proxy on port `10808`.
+   - **Option A**: Import `config.json` into a V2Ray-compatible client (V2RayN, NekoBox, etc.). This sets up a local SOCKS5 proxy on port `10808`.
    - **Option B**: Configure your browser or system proxy to use HTTP Proxy `127.0.0.1:4500`.
 
 ## Configuration
 
-You can tweak the fragmentation logic in `pyprox_complete.py` to suit your ISP:
+You can tweak the fragmentation logic in `pyprox.py` to suit your ISP:
 
 ```python
 # Adjust based on ISP behavior
